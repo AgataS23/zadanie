@@ -1,0 +1,10 @@
+$color-main:green;
+$color-primary: blue;
+$color-secondary: red;
+h1{
+    color:$color-main;
+}
+p{
+    background-color: $color-primary;
+    color: $color-secondary;
+}
