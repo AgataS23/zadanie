@@ -61,3 +61,17 @@ html {
     }
 
   }
+  .galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    &__item {
+      max-width: 25%;
+      flex-shrink: 2;
+    }
+    &__item:first-of-type, &__item:last-of-type {
+      max-width: 50%;
+      flex-grow: 2;
+    }
+  }

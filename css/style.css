@@ -45,3 +45,15 @@ body {
       align-content: center;
       justify-content: space-around;
       align-items: center; }
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%; }
+  .galery__item {
+    max-width: 25%;
+    flex-shrink: 2; }
+  .galery__item:first-of-type, .galery__item:last-of-type {
+    max-width: 50%;
+    flex-grow: 2; }
