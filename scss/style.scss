@@ -2,6 +2,9 @@
 
 $color-text: #3C3F40;
 $color-light-brown: #BF9D8A;
+$color-light-grey: #E9E9E3;
+$color-lighten-grey: #F5F5F1;
+
 
 html {
     font-size: 62.5%;
@@ -61,7 +64,7 @@ html {
     }
 
   }
-  .galery {
+  .gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,5 +76,48 @@ html {
     &__item:first-of-type, &__item:last-of-type {
       max-width: 50%;
       flex-grow: 2;
+    }
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    &__header {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6rem;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: 0.25px;
+      color: $color-text;
+      margin: 8rem auto 6.4rem auto;
+      padding-bottom: 8rem;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__background-icon {
+      width: 19.2rem;
+      height: 19.2rem;
+      border-radius: 1.6rem;
+      // margin-bottom: 2.7rem;
+      margin: 0 1.6rem 2.7rem 1.6em;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    &__background-icon:nth-child(odd) {
+      background-color: $color-light-grey;
+    }
+    &__background-icon:nth-child(even) {
+      background-color: $color-lighten-grey;
+    }
+    &__icon {
+
     }
   }
