@@ -59,23 +59,32 @@
         <form action="#" class="contact__form">
             <div class="contact__wrapper-main">
                 <div class="contact__wrapper-main--first">
-                    <input type="text" name="name" id="name" placeholder="Imię">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                    <input type="checkbox" name="client" id="client"><label for="client">jestem kientem</label>
-                    <input type="checkbox" name="model" id="model"><label for="model">jestem modelką</label>
+                    <input class="input" type="text" name="name" id="name" placeholder="Imię">
+                    <input class="input" type="email" name="email" id="email" placeholder="E-mail">
+                    <div class="wrapper-input">
+                        <input class="input-radio" type="radio" id="client" name="client" value="client">
+                        <label class="label" for="client">jestem kientem</label>
+                    </div>
+                    <div class="wrapper-input">
+                        <input class="input-radio" type="radio" id="model" name="model" value="model">
+                        <label class="label" for="model">jestem modelką</label>
+                    </div>
                 </div>
                 <div class="contact__wrapper-main--second">
-                    <select id="search" name="search">
+                    <select class="input" id="search" name="search">
                         <option value="temat1">Wybierz temat</option>
                         <option value="temat2">temat 2</option>
                         <option value="temat3">temat 3</option>
                         <option value="temat4">temat 4</option>
                     </select>
-                    <input type="text" name="text" id="text" placeholder="Napisz wiadomość">
+                    <input class="input input-big" type="text" name="text" id="text" placeholder="Napisz wiadomość">
                 </div>
             </div>
-            <input type="checkbox" name="model" id="model"><label for="model">wyrażam zgodę na przetwarzanie moich danych osobowych</label>
-            <button>Wyślij wiadomość</button>
+            <div class="wrapper-input">
+                <input class="checkbox" type="checkbox" name="model" id="model">
+                <label class="label label-checkbox" for="model">wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+            </div>
+            <button class="btn">Wyślij wiadomość <img class="btn-img" src="./images/arrow-right-white.svg" alt="arrow right"></button>
         </form>
     </section>
 
