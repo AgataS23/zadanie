@@ -1,10 +1,63 @@
-$color-main:green;
-$color-primary: blue;
-$color-secondary: red;
-h1{
-    color:$color-main;
-}
-p{
-    background-color: $color-primary;
-    color: $color-secondary;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;700&display=swap');
+
+$color-text: #3C3F40;
+$color-light-brown: #BF9D8A;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
+    &__logo {
+
+    }
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style-type: none;
+
+    }
+    &__item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      text-align: center;
+      letter-spacing: 0.25px;
+      padding: 1.6rem;
+
+      &--div {
+        padding: 1.6rem;
+        width: 12rem;
+        height: 5rem;
+        border: 1px solid $color-light-brown;
+        border-radius: .8rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+  }
