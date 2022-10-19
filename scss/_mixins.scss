@@ -1,0 +1,10 @@
+@mixin header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: $color-text;
+    margin: 8rem auto 6.4rem auto;
+}
